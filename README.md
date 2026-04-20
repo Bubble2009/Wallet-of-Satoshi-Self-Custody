@@ -87,20 +87,24 @@ Ho creato un wallet con WoS self custodial, mi sono fatto mandare qualche fondo 
 A questo punto sono in possesso di un wallet con una serie di operazioni sopra.<br>
 Ci saranno dei movimenti e ci sarà un saldo.
 
-Mettiamo che ora qualcuno mi debba inviare dei fondi. Per poterli ricevere, devo creare una invoice come questa che segue:
+Mettiamo che ora qualcuno mi debba inviare dei fondi. Per poterli ricevere, devo creare una invoice come questa che segue.<br>
+L'invoice può essere mostra come un QR code:
 
 ![Invoice](./assets/Invoice.png)
 
+Oppure con una stringa di testo chiamata **lnurl**
+
 `lnbc1u1p57ve8app5vjdcgn3cyy8m0ugm9uphatvsy6ekec4hykxq40pesldn4vqh9u8ssp5kh9j2s3e9s88k2f7m9rp3z3dfw6mk4c3krcm4a7u4emmrxg4xmxsxqyz5vqnp4qvyndeaqzman7h898jxm98dzkm0mlrsx36s93smrur7h0azyyuxc5rzjq25carzepgd4vqsyn44jrk85ezrpju92xyrk9apw4cdjh6yrwt5jgqqqqrt49lmtcqqqqqqqqqqq86qq9qrzjqtrqywde68y6jv9l29dkhqyrhag95njppjc7wvl633uhfsx4m48slapyqr6zgqqqq8hxk2qqae4jsqyugqcqzpudqq9qyyssqawprdkj0kl88nty4m786wewwg2a90yhtf5yxgr42drq3s0065v8ya95rr8sy66fv3mjsplcxyhdklchgfyxqhfcuencvvzhpj0y0upqpva6e9s`
 
-Ora, con questa invoice, basta andare su un sito che decodifichi invoice Lightning come [lightningdecoder.com](https://lightningdecoder.com) ed inserire l'invoice che ho incollato quì sopra.<br>
-Dalla invoice, vengono decodificati un numero ginormico di dati. La schermata è decisamente lunga, piena di sigle, codici, numeri e tante alte informazioni:
+Con questa stringa che indica la mia invoice, basta andare su un sito che la decodifichi come [lightningdecoder.com](https://lightningdecoder.com) ed inserendo quella stringa potremo interpretare alcuni dati.<br>
+Dalla decodifica della invoice, vengono mostrati un numero ginormico di dati.<br>
+La schermata è decisamente lunga, piena di sigle, codici, numeri e tante alte informazioni:
 
 ![lightningdecoder_1](./assets/lightningdecoder_1.jpg)
 
-Potete vedere tantissime informazioni sulla invoice.<br>
-Importo, FEE, Timestamp, Scadenza e ancora tante altre informazioni.<br>
-Di tutta questa enorme pagina di dati, dobbiamo concentrarci solo si questo piccolo blocco:
+Potete vedere tantissime informazioni relative a questa invoice.<br>
+Quelle più identificabili sono sicuramente l'importo, le FEE, il Timestamp, la Scadenza e ancora tante altre.<br>
+Di tutta questa enorme pagina di dati, c'è un piccolo blocco che mostra alcuni dati allarmanti:
 
 ![lightningdecoder_2](./assets/lightningdecoder_2.jpg)
 
@@ -109,14 +113,24 @@ Il dato che ci interessa è la **Public Key**:
 `02c60239b9d1c9a930bf515b6b8083bf505a4e410cb1e733fa8c7974c0d5dd4f0f`
 
 Ora prendiamo questa stringa esadecimale ed andiamo ad inserirla in un sito che esplora l'ecosistema Spark, nel mio esempio ho usato [sparkscan.io](https://sparkscan.io).<br>
-Incollando la **Public Key** identificata sopra, possiamo visualizzare una **AGGHIACCIANTE INFORMAZIONE!!**. Tutte le transazioni di questo Wallet ed il suo saldo, sono esposti in chiaro a chiunque riceva una mia invoice.
+Incollando la **Public Key** identificata sopra, possiamo visualizzare una **AGGHIACCIANTE VIDEATA!!**.<br>
+Tutte le transazioni di questo Wallet ed il suo saldo, sono esposti in chiaro a chiunque riceva una mia invoice.
 
 ![Sparkscan](./assets/Sparkscan.jpg)
 
 La controprova sta nello screenshot che segue.<br>
-Come potete vedere, su sparkscan.io sono visibili tutti i movimenti ed il saldo presente sul wallet.
+Come potete vedere, su *sparkscan.io* sono visibili tutti i movimenti ed il saldo presente sul wallet.<br>
+Quello che segue è lo screenshot del WoS che ho utilizzato per questo esempio.
 
 ![Screenshot Wallet](./assets/Screenshot_WoS.png)
+
+Chiunque riceva una vostra invoice generata con WoS Self-Custody, può vedere tutto quello che avete fatto con quel wallet.<br>
+Chiunque riceva una vostra invoice generata con WoS Self-Custody, può vedere il saldo di quel wallet.<br>
+**WoS Self-Custody**
+
+**AIUTO!!**
+
+***
 
 ## Conclusioni
 
