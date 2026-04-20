@@ -126,41 +126,45 @@ Quello che segue è lo screenshot del WoS che ho utilizzato per questo esempio.
 
 Chiunque riceva una vostra invoice generata con WoS Self-Custody, può vedere tutto quello che avete fatto con quel wallet.<br>
 Chiunque riceva una vostra invoice generata con WoS Self-Custody, può vedere il saldo di quel wallet.<br>
+
 **WoS Self-Custody**
 
 **AIUTO!!**
 
-***
+---
 
 ## Conclusioni
 
 Ho deciso di scrivere questa guida, per cercare di aprire gli occhi a tutte quelle persone che ignorano la pericolosità di questa falla in WoS.<br>
-Mi è capitato di parlarne in gruppi Telegram e venire deriso, quasi insultato e accusato di provare piacere nel seminare il panico.
+Mi è capitato di parlarne in gruppi Telegram e venire deriso, quasi insultato e accusato di provare piacere nel seminare il panico.<br>
+Sono stato deriso perchè mi preoccupavo se il barista veniva a scoprire che avevo 20 euro sul wallet.
 
-Quello che però queste persone non riescono a comprendere, è che se presentano Bitcoin come strumento per la sovranità individuale e lo sponsorizzano come strumento pseudonimo, proponendo l'utilizzo di WoS vengono meno a quanto detto in precedenza.<br>
-Mi è stato contestato in maniera veramente aspra che se il barista dovesse scoprire che ho 20 euro sul wallet, non sarebbe assolutamente un problema.
+Quello che però queste persone non riescono a comprendere, è che se presentano Bitcoin come strumento per la sovranità individuale e lo sponsorizzano come strumento pseudonimo, proponendo l'utilizzo di WoS vengono meno a quanto da loro detto in precedenza.<br>
 
-Questa affermazione mi potrebbe anche trovare d'accordo, ma a patto che alla persona a cui si consiglia di utilizzare questo strumento, vengano mostrati tutti i pro ed i contro.
-
-WoS potrebbe continuare ad essere uno strumento per far avvicinare la gente a Bitcoin, ma solo se si mettono dei paletti ben precisi nell'utilizzo.
+Se si consiglio a qualcuno di utilizzare uno strumento tecnologico, io ritengo che sia importante che vengano mostrati i pro, ma soprattutto i contro.<br>
 
 Mi hanno definito paranoico, ma in Francia, dall'inizio del 2026, gli attacchi fisici, le rapine e i sequestri che coinvolgono persone con possedimenti in Cryptovalute, sono aumentati a dismisura.<br>
-Quindi, perchè dover andare a mostrare ad un bar o ad una persona da cui sto comprando un oggetto pagandolo in satoshi, l'intero transato e saldo del mio wallet?<br>
-WoS lo si utilizza di persona, faccia a faccia. Continuiamo ad essere pseudonimi, ma ci mettiamo la faccia. Diventiamo riconoscibili.
+Quindi, perchè dover andare a mostrare ad un bar o ad una persona a cui sto vendendo un oggetto in satoshi, l'intero transato ed il saldo del mio wallet?<br>
+WoS lo si utilizza di persona, faccia a faccia.<br>
+Continuiamo ad essere pseudonimi, ma mettendoci faccia diventiamo riconoscibili!
 
-Quindi, al di la del fatto che non mi piace mostrare il contenuto del mio portafoglio al primo che pago, potrei anche valutare l'utilizzo di WoS per piccolissimi pagamenti e con piccolissime ricariche sporadiche, ma **ASSOLUTAMENTE NON VA MAI E POI MAI PRESO IN CONSIDERAZIONE PER TRANSAZIONI MAGGIORI**; sarà anche SELF CUSTODIAL, ma è un Self Custodial che sbandiera ai 4 venti il mio saldo ed il mio transato.
+Quindi, al di la del fatto che non mi piace mostrare il contenuto del mio portafoglio al primo da cui ricevo dei sats, potrei anche tollerare che WoS venga utilizzato per piccolissimi pagamenti e con piccolissime ricariche sporadiche, ma **ASSOLUTAMENTE NON VA MAI E POI MAI ANDREA' PRESO IN CONSIDERAZIONE PER TRANSAZIONI MAGGIORI**; sarà anche **SELF CUSTODIAL**, ma è un Self Custodial che sbandiera ai 4 venti il mio saldo ed il mio transato.
 
-Ma poi, con tutte le alternative FOSS che esistono, perchè proporre una soluzione Closed come WoS?<br>
+Oggi come oggi esistono molteplici alternative FOSS, perchè proporre una soluzione Closed e fallata come WoS?<br>
 Siamo sicuri che proporre tecnologie senza fare un disclaimer su eventuali pericoli nell uso della stessa, sia la soluzione corretta?<br>
-Io diffiderei di chi mi mostra solo un lato della medaglia. Troppo spesso l'ignoranza è stata utilizzata per controllare le masse.<br>
+Io diffiderei di chi mi mostra solo un lato della medaglia.<br>
+Troppo spesso l'ignoranza è stata utilizzata per controllare le masse.<br>
+
 Spero che questa mia guida possa far aprire gli occhi a qualcuno.
 
 ### Ringraziamenti
-Innanzitutto devo ringraziare Plak perchè sul suo canale YouTube [Final Step Bitcoin](https://www.youtube.com/@final_step_bitcoin) ha pubblicato il video [WALLET OF SATOSHI SELF-CUSTODY: Sembra privato, ma TUTTI vedono i TUOI MOVIMENTI! Ti spiego come](https://youtu.be/aaHfPL_YoVM?si=GgKAQue7v2RVBiDu) che ha fatto aprire gli occhi su WoS all'Italia capace di comprendere. Lo ringrazio anche per aver condiviso con me parecchio del materiale che ho riportato quì sopra.
+Innanzitutto devo ringraziare Plak perchè sul suo canale YouTube [Final Step Bitcoin](https://www.youtube.com/@final_step_bitcoin) ha pubblicato il video [WALLET OF SATOSHI SELF-CUSTODY: Sembra privato, ma TUTTI vedono i TUOI MOVIMENTI! Ti spiego come](https://youtu.be/aaHfPL_YoVM?si=GgKAQue7v2RVBiDu) che ha fatto aprire gli occhi su WoS a chi, come me, è in grado di comprendere.<br
+Lo ringrazio anche per aver condiviso con me parecchio del materiale che ho riportato quì sopra.
 
 Devo poi ringraziare alcuni utenti del gruppo Telegram [Bitcoin EDU Veneto](https://t.me/Bitcoin_Veneto) perchè è stato dopo essere stato da loro attaccato, canzonato, bistrattato e quasi insultato che ho deciso di scrivere questa guida.
 
-Ringrazio tutti quelli che mi hanno aiutato inviando i fondi per le transazioni.
+In ultimo ringrazio tutti quelli che mi hanno aiutato inviando i fondi per le transazioni di esempio.
+
 | | |
 | :------- | :--------: |
 |  Come sempre invito chiunque voglia commentare a farlo liberamente, accetto volentieri C&C che possano arricchire e/o correggere questo scritto.<br>Ho buttato tutto giù di getto, pertanto segnalatemi anche qualsiasi tipo di errore.<br><br> Per parlare con me di questa guida, unitevi al gruppo Telegram :link:[ABC del Bitcoin](https://t.me/+GlEaD0WD53BmNGE0).| [![QR](assets/qr-code_ABC.png)](https://t.me/+GlEaD0WD53BmNGE0) |
