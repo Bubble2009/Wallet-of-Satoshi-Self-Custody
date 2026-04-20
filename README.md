@@ -28,36 +28,36 @@ Sicuramente tutti avrete sentito parlare del Trilemma.<br>
 In pratica, questa teoria, sostiene che solo due dei tre vertici possano essere implementati in una Blockchain.<br>
 Nel caso di Bitcoin [^1] (l'unica vera Blockchain) la Decentralizzazione e la Sicurezza sono stati implementanti a discapito di altre cose.<br>
 A Bitcoin spesso viene rimproverata la *scarsa privacy* delle transazioni.<br>
-Per garantire la sicurezza, *Bitcoin non è anonimo*, Bitcoin è **pseudonimo**, ma soprattutto è tutto tracciabile: interrogando la mempool, infatti, possiamo seguire a ritroso una qualsiasi transazione fino ad arrivare al bitcoin generato come coinbase.<br>
-Altra cosa che si riprovera a Bitcoin è *la lentezza delle transazioni*. Sempre per garantire la Sicurezza delle transazioni i blocchi vengono validati con la Proof of Work che in genere permette di avere un nuovo blocco ogni 10 minuti.
+Infatti, per garantire la sicurezza, *Bitcoin non è anonimo*, Bitcoin è **pseudonimo**, ma soprattutto è tutto tracciabile; interrogando la mempool, infatti, possiamo seguire a ritroso una qualsiasi transazione fino ad arrivare al bitcoin generato come coinbase.<br>
+Altra cosa che si riprovera a Bitcoin è *la lentezza delle transazioni*. Sempre per garantire la Sicurezza delle transazioni i blocchi vengono validati con la Proof of Work e, come prevede il protocollo, tramite la difficulty adjustment, viene validato un nuovo blocco circa ogni 10 minuti.
 
 ### Lightning Network
 
 Per questo motivo, per **scalare il protocollo**, sono stati costruiti layer superiori. Il più conosciuto (qualcuno sostiene che sia l'unico) è **Lightning Network**.<br>
 Già il nome ci fa capire su cosa punta questo protocollo: **sulla velocità**, ma, come vedremo, non è l'unica caratteristica importante.
 
-Non sono quì a parlare del funzionamento di questo protocollo, ma mi serve farvi capire alcune suo caratteristiche per poter poi spiegare la pericolosità del sistema che ha adottato WoS.
+Non sono quì a parlare del funzionamento di questo protocollo, ma serve farvi capire alcune suo caratteristiche per poter poi spiegare la pericolosità del sistema che ha adottato ora WoS.
 
 Se in Bitcoin vi è una traccia indelebile di tutto quello che accade, in Lightning Network, invece, tutto scompare una volta chiuso il canale[^2].<br>
 Questa è una caratteristica importante che viene spesso utilizzata per rompere la tracciabilità di una transazione Bitcoin.<br>
 
-Visto che questo è un concetto che può sembrare complesso, provo a spiegarmi in maniera semplice con un esempio pratico.
+Visto che questo è un concetto che può sembrare complesso, provo a spiegarmi in maniera semplice con un esempio prteoricotico.
 
-> *Pippo* compra dei bitcoin on chain da *Gargamella*, ma non ha piacere che *Gargamella* veda come lui utilizzerà quelle monete, così cerca un modo di rompere la tracciabilità che è intrinseca a Bitcoin.
+> *Pippo* riceve dei bitcoin on chain da *Gargamella*, ma non ha piacere che *Gargamella* veda come lui utilizzerà quelle monete, così cerca un modo di rompere la tracciabilità che è intrinseca a Bitcoin.
 >
 > Ci sono vari modi per rompere questa tracciabilità, ma quello che prendiamo ora in considerazione è lo **swap su Lightning Network**.
 >
 > Cosa farà quindi *Pippo*? Prenderà i bitcoin ricevuti da *Gargamella* e tramite un servizio di swap [^3] li trasformerà in Liquidità di un suo wallet Lightning.<br>
-> Visto che si tratta dei suoi soldi e magari non sono nemmeno pochini, *Pippo* magari cercherà un wallet Lightning Self-Custodial per custodire personalmente quei senza lasciarli in mano ad un ente terzo a cui dovrebbe devolvere la sua fiducia.
-> Padrone dei suoi fondi, potrà usarli nel circuito LN, oppure attendere il momento opportuno per spostarli altrove.
+> Visto che si tratta dei suoi soldi (e magari non sono nemmeno pochini), *Pippo* cercherà un wallet Lightning Self-Custodial che gli permette di custodire personalmente i fondi senza doversi rivolgere ad un ente terzo a cui dovrebbe devolvere la sua fiducia.<br>
+> Padrone dei suoi fondi, potrà decidere se usarli nel circuito LN, oppure attendere il momento opportuno per spostarli altrove.
 >
-> Appena sarà pronto, il nostro *Pippo*, effettuerà l'operazione al contrario riportando i suoi fondi OnChain. *Pippo* ha già dimostrato di tenere alla sua privacy e alla custodia dei propri fondi, quindi utilizzerà un Wallet assolutamente Self-Custody e di cui ha il pieno controllo.
+> In questo caso, appena sarà pronto, il nostro *Pippo*, effettuerà l'operazione al contrario riportando i suoi fondi OnChain. *Pippo* ha già dimostrato di tenere alla sua privacy e alla custodia dei propri fondi, quindi utilizzerà un Wallet assolutamente Self-Custody di cui ha il pieno controllo.
 >
-> *Gargamella* il curiosone, controllando la transazione in mempool vedrà i fondi di *Pippo* sparire senza sapere dove siano andati a finire perchè Pippo* li ha trasferiti su un altro wallet, magari su un cold wallet per utilizzarli come riserva o su di un hot wallet perchè vuole spenderli.
+> *Gargamella* il curiosone, controllando la transazione in mempool vedrà i fondi di *Pippo* sparire senza sapere dove siano andati a finire perchè *Pippo* li ha trasferiti su un altro wallet, magari su un cold wallet per utilizzarli come riserva o magari su di un hot wallet perchè vuole spenderli.
 
-Con la speranza che questo esempio vi sia chiaro, andiamo a vedere come questo possa essere rilevante in questa guida su WoS.
+Con la speranza che questo esempio vi sia chiaro, andiamo a vedere come possa essere rilevante in questa guida su WoS.
 
-Per l'amo del vero, devo informarvi che gli SWAP hanno dei costi (in genere ogni swap ha uno 0,5% di fee), ma se ne avete compreso l'importanza, potrete valutare liberamente se questo costo costo sarà adeguato ai benefici.
+Per l'amor del vero, devo informarvi che gli SWAP hanno dei costi (in genere ogni swap ha uno 0,5% di fee), ma se ne avete compreso l'importanza, potrete valutare liberamente se questo costo sarà adeguato ai benefici.
 
 Ora, però, andiamo a conoscere un altro attore di questa situazione.
 
@@ -71,8 +71,10 @@ Iniziamo a vedere come si autodefiniscono sul sito [spark.money](https://spark.m
 Si definiscono un altro Layer 2 (ricordo che anche Lightning è un L2) e il loro intento è di spostare la liquidità in stablecoin tra finanza decentralizzata, piattaforme centralizzate e asset reali tokenizzati.
 
 **WoS Self-Custody** si appoggia a Spark per gestire i vostri fondi.<br>
-In pratica, ora WoS non è un vero wallet Lightning, ma è un wallet spark, ma che vi permette però di operare solo su Lightning Network.<br>
+In pratica, ora WoS è un wallet spark, ma che vi permette però di operare solo sul circuito di Lightning Network.<br>
 WoS non è l'unico wallet LN che si appoggia a questa tecnologia, ma, ad oggi, mi risulta che sia l'unico ad avere questa vulnerabilità.
+
+L'utilizzo di *sidechain* come Spark o Liquid, permette di operare nel circuito Lightning Network senza doversi occupare di gestire i canali.
 
 ## WoS + Spark perchè questa accoppiata deve farci paura
 
@@ -82,16 +84,14 @@ Per farvi comprendere i rischi che si corrono, ho pensato di fare un esempio pra
 
 Ho creato un wallet con WoS self custodial, mi sono fatto mandare qualche fondo da qualche conoscente e poi li ho rimandati indietro in maniera un po' randomica.
 
-A questo punto ho un wallet con una serie di operazioni sopra.<br>
+A questo punto sono in possesso di un wallet con una serie di operazioni sopra.<br>
 Ci saranno dei movimenti e ci sarà un saldo.
 
-Mettiamo che voi ora mi dobbiate effettuare un pagamento. Per poterlo ricevere, devo creare una invoice come questa che segue:
+Mettiamo che ora qualcuno mi debba inviare dei fondi. Per poterli ricevere, devo creare una invoice come questa che segue:
 
 ![Invoice](./assets/Invoice.png)
 
-```lnbc1u1p57ve8app5vjdcgn3cyy8m0ugm9uphatvsy6ekec4hykxq40pesldn4vqh9u8ssp5kh9j2s3e9s88k2f7m9rp3z3dfw6mk4c3krcm4a7u4emmrxg4xmxsxqyz5vqnp4qvyndeaqzman7h898jxm98dzkm0mlrsx36s93smrur7h0azyyuxc5rzjq25carzepgd4vqsyn44jrk85ezrpju92xyrk9apw4cdjh6yrwt5jgqqqqrt49lmtcqqqqqqqqqqq86qq9qrzjqtrqywde68y6jv9l29dkhqyrhag95njppjc7wvl633uhfsx4m48slapyqr6zgqqqq8hxk2qqae4jsqyugqcqzpudqq9qyyssqawprdkj0kl88nty4m786wewwg2a90yhtf5yxgr42drq3s0065v8ya95rr8sy66fv3mjsplcxyhdklchgfyxqhfcuencvvzhpj0y0upqpva6e9s
-
-```
+`lnbc1u1p57ve8app5vjdcgn3cyy8m0ugm9uphatvsy6ekec4hykxq40pesldn4vqh9u8ssp5kh9j2s3e9s88k2f7m9rp3z3dfw6mk4c3krcm4a7u4emmrxg4xmxsxqyz5vqnp4qvyndeaqzman7h898jxm98dzkm0mlrsx36s93smrur7h0azyyuxc5rzjq25carzepgd4vqsyn44jrk85ezrpju92xyrk9apw4cdjh6yrwt5jgqqqqrt49lmtcqqqqqqqqqqq86qq9qrzjqtrqywde68y6jv9l29dkhqyrhag95njppjc7wvl633uhfsx4m48slapyqr6zgqqqq8hxk2qqae4jsqyugqcqzpudqq9qyyssqawprdkj0kl88nty4m786wewwg2a90yhtf5yxgr42drq3s0065v8ya95rr8sy66fv3mjsplcxyhdklchgfyxqhfcuencvvzhpj0y0upqpva6e9s`
 
 Ora, con questa invoice, basta andare su un sito che decodifichi invoice Lightning come [lightningdecoder.com](https://lightningdecoder.com) ed inserire l'invoice che ho incollato quì sopra.<br>
 Dalla invoice, vengono decodificati un numero ginormico di dati. La schermata è decisamente lunga, piena di sigle, codici, numeri e tante alte informazioni:
@@ -106,9 +106,7 @@ Di tutta questa enorme pagina di dati, dobbiamo concentrarci solo si questo picc
 
 Il dato che ci interessa è la **Public Key**:
 
-```02c60239b9d1c9a930bf515b6b8083bf505a4e410cb1e733fa8c7974c0d5dd4f0f
-
-```
+`02c60239b9d1c9a930bf515b6b8083bf505a4e410cb1e733fa8c7974c0d5dd4f0f`
 
 Ora prendiamo questa stringa esadecimale ed andiamo ad inserirla in un sito che esplora l'ecosistema Spark, nel mio esempio ho usato [sparkscan.io](https://sparkscan.io).<br>
 Incollando la **Public Key** identificata sopra, possiamo visualizzare una **AGGHIACCIANTE INFORMAZIONE!!**. Tutte le transazioni di questo Wallet ed il suo saldo, sono esposti in chiaro a chiunque riceva una mia invoice.
@@ -155,6 +153,6 @@ Ringrazio tutti quelli che mi hanno aiutato inviando i fondi per le transazioni.
 
 [^1]: Bitcoin (con l'iniziale maiuscola) indica il protocollo, mentre bitcoin (con l'iniziale minuscola) indica, invece, la moneta.
     
-[^2]: Canali
+[^2]: Per effettuare una transazione tra due utenti è necessario che i fondi possano passare dall'attore A all'attore B. Questa transizione avviene attraverso ai canali di pagamento.
     
 [^3]: SWAP
