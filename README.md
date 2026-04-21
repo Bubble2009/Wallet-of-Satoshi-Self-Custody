@@ -30,7 +30,7 @@ Sicuramente tutti avrete sentito parlare del Trilemma.<br>
 In pratica, questa teoria, sostiene che solo due dei tre vertici possano essere implementati in una Blockchain.<br>
 Nel caso di Bitcoin [^1] (l'unica vera Blockchain) la Decentralizzazione e la Sicurezza sono stati implementanti a discapito di altre cose.<br>
 A Bitcoin spesso viene rimproverata la *scarsa privacy* delle transazioni.<br>
-Infatti, per garantire la sicurezza, *Bitcoin non è anonimo*, Bitcoin è **pseudonimo**, ma soprattutto è tutto tracciabile; interrogando la mempool, infatti, possiamo seguire a ritroso una qualsiasi transazione fino ad arrivare al bitcoin generato come coinbase.<br>
+Infatti, per garantire la sicurezza, *Bitcoin non è anonimo*, Bitcoin è **pseudonimo**, ma soprattutto è tutto tracciabile; interrogando la Blockchain [^2], infatti, possiamo seguire a ritroso una qualsiasi transazione fino ad arrivare al bitcoin generato come coinbase.<br>
 Altra cosa che si riprovera a Bitcoin è *la lentezza delle transazioni*. Sempre per garantire la Sicurezza delle transazioni i blocchi vengono validati con la Proof of Work e, come prevede il protocollo, tramite la difficulty adjustment, viene validato un nuovo blocco circa ogni 10 minuti.
 
 ### Lightning Network
@@ -40,7 +40,7 @@ Già il nome ci fa capire su cosa punta questo protocollo: **sulla velocità**, 
 
 Non sono quì a parlare del funzionamento di questo protocollo, ma serve farvi capire alcune suo caratteristiche per poter poi spiegare la pericolosità del sistema che ha adottato ora WoS.
 
-Se in Bitcoin vi è una traccia indelebile di tutto quello che accade, in Lightning Network, invece, tutto scompare una volta chiuso il canale[^2].<br>
+Se in Bitcoin vi è una traccia indelebile di tutto quello che accade, in Lightning Network, invece, tutto scompare una volta chiuso il canale [^3].<br>
 Questa è una caratteristica importante che viene spesso utilizzata per rompere la tracciabilità di una transazione Bitcoin.<br>
 
 Visto che questo è un concetto che può sembrare complesso, provo a spiegarmi in maniera semplice con un esempio prteoricotico.
@@ -49,13 +49,13 @@ Visto che questo è un concetto che può sembrare complesso, provo a spiegarmi i
 >
 > Ci sono vari modi per rompere questa tracciabilità, ma quello che prendiamo ora in considerazione è lo **swap su Lightning Network**.
 >
-> Cosa farà quindi *Pippo*? Prenderà i bitcoin ricevuti da *Gargamella* e tramite un servizio di swap [^3] li trasformerà in Liquidità di un suo wallet Lightning.<br>
+> Cosa farà quindi *Pippo*? Prenderà i bitcoin ricevuti da *Gargamella* e tramite un servizio di swap [^4] li trasformerà in Liquidità di un suo wallet Lightning.<br>
 > Visto che si tratta dei suoi soldi (e magari non sono nemmeno pochini), *Pippo* cercherà un wallet Lightning Self-Custodial che gli permette di custodire personalmente i fondi senza doversi rivolgere ad un ente terzo a cui dovrebbe devolvere la sua fiducia.<br>
 > Padrone dei suoi fondi, potrà decidere se usarli nel circuito LN, oppure attendere il momento opportuno per spostarli altrove.
 >
 > In questo caso, appena sarà pronto, il nostro *Pippo*, effettuerà l'operazione al contrario riportando i suoi fondi OnChain. *Pippo* ha già dimostrato di tenere alla sua privacy e alla custodia dei propri fondi, quindi utilizzerà un Wallet assolutamente Self-Custody di cui ha il pieno controllo.
 >
-> *Gargamella* il curiosone, controllando la transazione in mempool vedrà i fondi di *Pippo* sparire senza sapere dove siano andati a finire perchè *Pippo* li ha trasferiti su un altro wallet, magari su un cold wallet per utilizzarli come riserva o magari su di un hot wallet perchè vuole spenderli.
+> *Gargamella* il curiosone, controllando la transazione nella Blockchain [^2] vedrà i fondi di *Pippo* sparire senza sapere dove siano andati a finire perchè *Pippo* li ha trasferiti su un altro wallet, magari su un cold wallet per utilizzarli come riserva o magari su di un hot wallet perchè vuole spenderli.
 
 Con la speranza che questo esempio vi sia chiaro, andiamo a vedere come possa essere rilevante in questa guida su WoS.
 
@@ -179,7 +179,9 @@ In ultimo ringrazio tutti quelli che mi hanno aiutato inviando i fondi per le tr
 |  Come sempre invito chiunque voglia commentare a farlo liberamente, accetto volentieri C&C che possano arricchire e/o correggere questo scritto.<br>Ho buttato tutto giù di getto, pertanto segnalatemi anche qualsiasi tipo di errore.<br><br> Per parlare con me di questa guida, unitevi al gruppo Telegram :link:[ABC del Bitcoin](https://t.me/+GlEaD0WD53BmNGE0).| [![QR](assets/qr-code_ABC.png)](https://t.me/+GlEaD0WD53BmNGE0) |
 
 [^1]: Bitcoin (con l'iniziale maiuscola) indica il protocollo, mentre bitcoin (con l'iniziale minuscola) indica, invece, la moneta.
+
+[^2]: Blockchain, nome colloquiale della Timechain, il registro distribuito in cui vengono trascritte, in maniera indelebile, tutte le transazioni. La Timechain è consultabile tramite il sito [mempool.space](https://mempool.space/it/). Se si interroga la Timechain per le proprie transazioni, è consigliabile farlo passando tramite TOR. Per maggiori informazioni su TOR, consulta [questa guida](https://github.com/Bubble2009/TOR-vs-VPN).
     
-[^2]: Per effettuare una transazione tra due utenti è necessario che i fondi possano passare dall'attore A all'attore B. Questa transizione avviene attraverso ai canali di pagamento.
+[^3]: Per effettuare una transazione tra due utenti è necessario che i fondi possano passare dall'attore A all'attore B. Questa transizione avviene attraverso ai canali di pagamento.
     
-[^3]: SWAP (devo ancora decidere come gestire questa nota, la compilerò prossimamente.)
+[^4]: SWAP (devo ancora decidere come gestire questa nota, la compilerò prossimamente.)
