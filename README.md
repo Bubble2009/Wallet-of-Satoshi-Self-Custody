@@ -139,7 +139,7 @@ Sono stato deriso perchè mi preoccupavo se il barista veniva a scoprire che ave
 
 Quello che però queste persone non riescono a comprendere, è che se presentano Bitcoin come strumento per la sovranità individuale e lo sponsorizzano come strumento pseudonimo, proponendo l'utilizzo di WoS vengono meno a quanto da loro detto in precedenza.<br>
 
-Se si consiglio a qualcuno di utilizzare uno strumento tecnologico, io ritengo che sia importante che vengano mostrati i pro, ma soprattutto i contro.<br>
+Se si consiglia a qualcuno di utilizzare uno strumento tecnologico, ritengo che sia importante che vengano mostrati i pro, ma soprattutto i contro.<br>
 
 Mi hanno definito paranoico, ma in Francia, dall'inizio del 2026, gli attacchi fisici, le rapine e i sequestri che coinvolgono persone con possedimenti in Cryptovalute, sono aumentati a dismisura.<br>
 Quindi, perchè dover andare a mostrare ad un bar o ad una persona a cui sto vendendo un oggetto in satoshi, l'intero transato ed il saldo del mio wallet?<br>
