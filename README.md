@@ -1,6 +1,6 @@
 # Wallet of Satoshi Self-Custody
 
-![WoS](assets/No_WoS_cross.jpg)
+![WoS](./assets/WoS_grey.png)
 
 ## Gennaio 2024
 
@@ -13,6 +13,8 @@ Un po' per questo motivo ed un po' perché era custodial, ho sempre sconsigliato
 Ora, però, *Wallet of Satoshi*, per non sottostare alle leggi Europee (MICAR, DAC8 etc etc etc) ha annunciato la trasformazione in **Wallet Self-Custody**.
 
 ---
+
+![WoS](./assets/WoS_grey_SC.png)
 
 ### WoW, che bella novità!
 
@@ -127,10 +129,6 @@ Quello che segue è lo screenshot del WoS che ho utilizzato per questo esempio.
 Chiunque riceva una vostra invoice generata con WoS Self-Custody, può vedere tutto quello che avete fatto con quel wallet.<br>
 Chiunque riceva una vostra invoice generata con WoS Self-Custody, può vedere il saldo di quel wallet.<br>
 
-**WoS Self-Custody**
-
-**AIUTO!!**
-
 ---
 
 ## Conclusioni
@@ -157,6 +155,17 @@ Troppo spesso l'ignoranza è stata utilizzata per controllare le masse.<br>
 
 Spero che questa mia guida possa far aprire gli occhi a qualcuno.
 
+**WoS Self-Custody**
+
+**AIUTO!!**
+
+![WoS](./assets/WoS_rip.png)
+
+La gente si scandalizza quando io, che ho fatto del *Not your Key, Not your Coin* un mio mantra, affermo che: "*se proprio devi usare WoS, è meglio usarlo in versione custodial con una VPN*".<br>
+Dopo aver letto queste righe, spero che riescano a comprendere il significato di questa frase.
+
+---
+
 ### Ringraziamenti
 Innanzitutto devo ringraziare Plak perchè sul suo canale YouTube [Final Step Bitcoin](https://www.youtube.com/@final_step_bitcoin) ha pubblicato il video [WALLET OF SATOSHI SELF-CUSTODY: Sembra privato, ma TUTTI vedono i TUOI MOVIMENTI! Ti spiego come](https://youtu.be/aaHfPL_YoVM?si=GgKAQue7v2RVBiDu) che ha fatto aprire gli occhi su WoS a chi, come me, è in grado di comprendere.<br
 Lo ringrazio anche per aver condiviso con me parecchio del materiale che ho riportato quì sopra.
@@ -173,4 +182,4 @@ In ultimo ringrazio tutti quelli che mi hanno aiutato inviando i fondi per le tr
     
 [^2]: Per effettuare una transazione tra due utenti è necessario che i fondi possano passare dall'attore A all'attore B. Questa transizione avviene attraverso ai canali di pagamento.
     
-[^3]: SWAP
+[^3]: SWAP (devo ancora decidere come gestire questa nota, la compilerò prossimamente.)
