@@ -10,7 +10,7 @@
 | *Wallet of Satoshi*, uno dei principali portafogli bitcoin e Lightning Network al mondo,<br> annuncia il suo ritiro dall’App Store di Apple e dal Play Store di Google negli Stati Uniti,<br> sollevando interrogativi sulle sfide di conformità e sul futuro dei servizi di criptovaluta nell’ambito di rigidi regimi normativi. <br>Inizialmente promette di lasciare l'app in funzione per permettere di prelevare i fondi.<br> Peccato che questa possibilità sia durata per poco tempo e che, avendo tolto l'applicazione dagli store......,<br> in molti siano rimasti a bocca asciutta. | ![X_Post](assets/X_post_Jan_2024.jpg) |
 
 Un po' per questo motivo ed un po' perché era custodial, ho sempre sconsigliato l'utilizzo di questa app.<br>
-Ora, però, *Wallet of Satoshi*, per non sottostare alle leggi Europee (MICAR, DAC8 etc etc etc) ha annunciato la trasformazione in **Wallet Self-Custody**.
+Ora, però, *Wallet of Satoshi*, per non sottostare alle leggi Europee (MiCAR, DAC8 etc etc etc) ha annunciato la trasformazione in **Wallet Self-Custody**.
 
 ---
 
