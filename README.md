@@ -2,6 +2,8 @@
 
 ![WoS](./assets/WoS_grey.png)
 
+**Attenzione!!** è stato inserito un importante aggiornamento il 25 Aprile 2026, se hai già letto la guida, puoi andare a leggere direttamente [questo aggiornamento](#aggiornamento-del-25-aprile-2026).
+
 ## Gennaio 2024
 
 
@@ -166,22 +168,37 @@ Dopo aver letto queste righe, spero che riescano a comprendere il significato di
 
 ---
 
+## Aggiornamento del 25 Aprile 2026
+
+Il *21 Aprile 2026* su Google Play ed il giorno seguente su App Store è compara la versione 3.3.1 di questa applicazione.
+
+**Nella versione per iOS, la gravissima falla è stata arginata**, almeno per il momento.<br>
+La cosa mi è stata indicata da [Alyx](https://github.com/AliX27), che ringrazio e da me verificata con **Ciccio**.
+
+La versione 3.3.1 per **Android**, invece, **contiene ancora la gravissima falla della privacy** segnalata sopra.
+
+Seguiranno futuri aggiornamenti, ma prendetevi 5 minuti per leggere questi appunti sul wallet Tether, la situazioni pare ancora peggiore.
+
+---
+
 ### Ringraziamenti
-Innanzitutto devo ringraziare Plak perchè sul suo canale YouTube [Final Step Bitcoin](https://www.youtube.com/@final_step_bitcoin) ha pubblicato il video [WALLET OF SATOSHI SELF-CUSTODY: Sembra privato, ma TUTTI vedono i TUOI MOVIMENTI! Ti spiego come](https://youtu.be/aaHfPL_YoVM?si=GgKAQue7v2RVBiDu) che ha fatto aprire gli occhi su WoS a chi, come me, è in grado di comprendere.<br
+
+Innanzitutto devo ringraziare Plak perché sul suo canale YouTube [Final Step Bitcoin](https://www.youtube.com/@final_step_bitcoin) ha pubblicato il video [WALLET OF SATOSHI SELF-CUSTODY: Sembra privato, ma TUTTI vedono i TUOI MOVIMENTI! Ti spiego come](https://youtu.be/aaHfPL_YoVM?si=GgKAQue7v2RVBiDu) che ha fatto aprire gli occhi su WoS a chi, come me, è in grado di comprendere.<br
 Lo ringrazio anche per aver condiviso con me parecchio del materiale che ho riportato quì sopra.
 
 Devo poi ringraziare alcuni utenti del gruppo Telegram [Bitcoin EDU Veneto](https://t.me/Bitcoin_Veneto) perchè è stato dopo essere stato da loro attaccato, canzonato, bistrattato e quasi insultato che ho deciso di scrivere questa guida.
 
 In ultimo ringrazio tutti quelli che mi hanno aiutato inviando i fondi per le transazioni di esempio.
 
-| | |
-| :------- | :--------: |
-|  Come sempre invito chiunque voglia commentare a farlo liberamente, accetto volentieri C&C che possano arricchire e/o correggere questo scritto.<br>Ho buttato tutto giù di getto, pertanto segnalatemi anche qualsiasi tipo di errore.<br><br> Per parlare con me di questa guida, unitevi al gruppo Telegram :link:[ABC del Bitcoin](https://t.me/+GlEaD0WD53BmNGE0).| [![QR](assets/qr-code_ABC.png)](https://t.me/+GlEaD0WD53BmNGE0) |
+
+|                                                                                                                                                                                                                                                                                                                                                                         |                                                                 |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------: |
+| Come sempre invito chiunque voglia commentare a farlo liberamente, accetto volentieri C&C che possano arricchire e/o correggere questo scritto.<br>Ho buttato tutto giù di getto, pertanto segnalatemi anche qualsiasi tipo di errore.<br><br> Per parlare con me di questa guida, unitevi al gruppo Telegram :link:[ABC del Bitcoin](https://t.me/+GlEaD0WD53BmNGE0). | [![QR](assets/qr-code_ABC.png)](https://t.me/+GlEaD0WD53BmNGE0) |
 
 [^1]: Bitcoin (con l'iniziale maiuscola) indica il protocollo, mentre bitcoin (con l'iniziale minuscola) indica, invece, la moneta.
+    
+[^2]: Blockchain, nome colloquiale della Timechain, il registro distribuito in cui vengono trascritte, in maniera indelebile, tutte le transazioni. La Timechain è consultabile tramite il sito [mempool.space](https://mempool.space/it/).<br> Se si interroga la Timechain per le proprie transazioni, è consigliabile farlo passando tramite TOR. Per maggiori informazioni su TOR, consulta [questa guida](https://github.com/Bubble2009/TOR-vs-VPN).
 
-[^2]: Blockchain, nome colloquiale della Timechain, il registro distribuito in cui vengono trascritte, in maniera indelebile, tutte le transazioni. La Timechain è consultabile tramite il sito [mempool.space](https://mempool.space/it/). Se si interroga la Timechain per le proprie transazioni, è consigliabile farlo passando tramite TOR. Per maggiori informazioni su TOR, consulta [questa guida](https://github.com/Bubble2009/TOR-vs-VPN).
-    
 [^3]: Per effettuare una transazione tra due utenti è necessario che i fondi possano passare dall'attore A all'attore B. Questa transizione avviene attraverso ai canali di pagamento.
-    
+
 [^4]: SWAP (devo ancora decidere come gestire questa nota, la compilerò prossimamente.)
