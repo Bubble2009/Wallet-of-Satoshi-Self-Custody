@@ -177,7 +177,7 @@ La cosa mi è stata indicata da [Alyx](https://github.com/AliX27), che ringrazio
 
 La versione 3.3.1 per **Android**, invece, **contiene ancora la gravissima falla della privacy** segnalata sopra.
 
-Seguiranno futuri aggiornamenti, ma prendetevi 5 minuti per leggere questi appunti sul wallet Tether, la situazioni pare ancora peggiore.
+Seguiranno futuri aggiornamenti, ma prendetevi 5 minuti per leggere queste note sul [Wallet Tether](https://github.com/Bubble2009/Tether-Wallet-spark-based). La situazioni pare ancora peggiore.
 
 ---
 
